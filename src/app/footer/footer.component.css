@@ -1,0 +1,25 @@
+footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: small;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  padding: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  td {
+    display: block;
+    text-align: center;
+  }
+}
