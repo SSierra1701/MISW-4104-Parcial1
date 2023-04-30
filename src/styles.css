@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:'Kaisei Decol';
   font-weight: bolder;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0px 2px 5px gray;
 }
 hr{
   border: 3px solid #b1b3b2;
