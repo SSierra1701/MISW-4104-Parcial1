@@ -9,16 +9,25 @@ import { PlantService } from './plant.service';
 })
 export class PlantsComponent implements OnInit {
   plants: Array<Plant> = []
+  p_interior: number = 0
+  p_exterior: number = 0
   constructor(private plantService: PlantService) { }
 
-  getPlants(): void {
+  getPlantsInfo(): void {
     this.plantService.getPlants().subscribe((plants) => {
       this.plants = plants;
+      for(let my_plant_info of this.plants){
+        if(my_plant_info.tipo == 'Interior'){
+          this.p_interior += 1;
+        }else{
+          this.p_exterior += 1;
+        }
+      }
     });
   }
 
   ngOnInit() {
-    this.getPlants();
+    this.getPlantsInfo();
   }
 
 }
